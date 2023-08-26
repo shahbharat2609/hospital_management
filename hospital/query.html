@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare-Query Page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/query.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      body{
+        text-align: center;
+      }
+      hr{
+      height:2px;
+      border-width:0;
+      color:gray;background-color:gray; 
+      width:90%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      }
+    </style>
+</head>
+<body >
+    
+      <div class="box">
+        <h3 class="heading">Query  <span>System</span></h3>
+        <div class="box-container">
+        <p>Fetch Whole Data</p>
+        
+        <form  method="post" action="all.php">
+           <div class="form-group">
+            <button type="submit" class="btn btn-primary">Search</button>
+           </div>
+        </form>
+        <hr>
+        <p>Search by name</p>
+
+        <form method="post" action="name.php" >
+            <div class="form-group">
+              <input name="Name" type="text" class="form-control" id="inputname" placeholder="Name"required>
+              <br><button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <hr>
+        <p>Search by Phone number</p>
+             
+        <form  method="post" action="phone.php">
+            <div class="form-group">
+              <input name="pno" type="text" class="form-control" id="inputname1" placeholder="Phoneno."required>
+              <br><button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <hr>       
+        <p>Search by Booking Date</p>
+        
+        <form method="post" action="date.php" >
+            <div class="form-group">
+              <input name="date" type="text" class="form-control" id="inputname2" placeholder="Booking date"required>
+              <br><button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <hr>       
+        <p>Search by Email</p>
+                    
+        <form method="post" action="email.php" >
+            
+            <div class="form-group">
+              <input name="email" type="text" class="form-control" id="inputname3" placeholder="Email"required>
+              <br><button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+      </div>
+      <a href="index.php"><button type="button" class="btn btn-primary" style="margin-left:40px">Back To Home</button></a>
+    </div>  
+
+</body>
+</html>

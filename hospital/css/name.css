@@ -1,0 +1,80 @@
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+.box{
+    margin:10px;
+    background:#fff;
+    border: var(--border);
+    border-radius: 1.5rem;
+    box-shadow: var(--box-shadow);
+    padding:10px;
+}
+.box-container{
+    padding-left: 2rem;
+    }
+
+.btn{
+        display: inline-block;
+        margin-top: 1rem;
+        padding: .5rem;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border:var(--border);
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        color:var(--green);
+        cursor: pointer;
+        font-size: 1rem;
+        background: #fff;
+    }
+    .btn span{
+        padding:.7rem 1rem;
+        border-radius: .5rem;
+        background: var(--green);
+        color:#fff2;
+        margin-left: .5rem;
+    }
+    
+.btn:hover{
+        background: var(--green);
+        color:#fff;
+    }
+    
+.btn:hover span{
+        color: var(--green);
+        background:#fff;
+        margin-left: 1rem;
+    }
+.heading{
+    margin:50px auto 60px auto;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 3.98rem;
+    letter-spacing: .4rem;
+
+}
+tr{
+    background-color: white;
+    border-radius:10px;
+}
+tr:hover {
+    background-color: #47de89;
+    color:black;
+    border-radius:10px;
+}
+
+th {
+    background-color: #16a085;
+    color: white;
+    padding-left: 10px;
+  }
+td{
+    bottom: 1px solid  #16a085 ;
+  }
